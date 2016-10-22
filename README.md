@@ -59,11 +59,11 @@
                 
 |程式語言與技術|技能|
 |:--|:--|
-|Java|Android 開發|
+|Java|[Android 開發](https://github.com/lili668668/ShakePlayer)|
 |Unity/C#|Unity 3D 遊戲開發|
 |Python|網路爬蟲|
 |JavaScript/Node.js/Socket.io|互動式網頁|
-|HTML/CSS/JavaScript|基礎網頁開發|
+|HTML/CSS/JavaScript|[基礎網頁開發](http://lili668668.github.io/NetHW/)|
 |ASP.Net/C#|簡易除錯能力|
 |GIT|基本版控能力|
 |Linux|基本指令能力|
