@@ -61,7 +61,7 @@
 |:--|:--|
 |Java|[Android 開發](https://github.com/lili668668/ShakePlayer)|
 |Unity/C#|Unity 3D 遊戲開發|
-|Python|網路爬蟲|
+|Python|[網路爬蟲](https://github.com/lili668668/LineStickerCrawler)|
 |JavaScript/Node.js/Socket.io|[互動式網頁](http://nodejs-nethw.rhcloud.com)|
 |HTML/CSS/JavaScript|[基礎網頁開發](http://lili668668.github.io/NetHW/)|
 |ASP.Net/C#|簡易除錯能力|
