@@ -46,6 +46,7 @@ public class Person {
   public String mediumLink; // novels I write
   public String[] favorites;
   public String[] hobbies;
+  public String[] skills;
   public String mantra;
   public void say() {
     System.out.println(mantra);
@@ -65,6 +66,12 @@ public class introduction {
       {"動畫", "漫畫", "遊戲", "小說", "電影", "電腦"};
     ballfish.hobbies = 
       {"寫程式", "寫小說", "耍廢"};
+    ballfish.skills = 
+      {"網頁後端(Node.js、Expressjs、Socket.io)",
+       "網路爬蟲(Python)",
+       "Unity 3D 遊戲開發(C#)",
+       "Android App 開發(Java)",
+       "網頁前端(Vue.js)"}
     ballfish.mantra = "早安 (・ω・)ノ";
     ballfish.say();
   }
@@ -110,7 +117,12 @@ public class introduction {
       "專案名稱": "程式教學 3D 遊戲",
       "指導老師": "朱蕙君",
       "專案簡述": "一個教初學者學習程式邏輯的遊戲",
-      "WebSite": "https://lili668668.github.io/SuperCubeWeb"
+      "網站": "https://lili668668.github.io/SuperCubeWeb"
+    },
+    "簡易賓果遊戲": {
+      "專案名稱": "Ballingo",
+      "專案簡述": "讓你可以上課跟別人連線玩賓果的小遊戲",
+      "網站": "https://nuxtllingo.herokuapp.com/"
     }
   ]
 }
