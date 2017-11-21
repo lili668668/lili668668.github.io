@@ -1,0 +1,13 @@
+h1, h2, h3, h4, h5, h6, p, table, td, tr, th, a, ul, li, ol, small {
+	font-family: 'Microsoft JhengHei','PT Sans Narrow','Source Han Sans TWHK',sans-serif !important;
+}
+
+.banner {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.table-fix, .table-fix td, .table-fix tr, .table-fix th {
+	border-color: #bac9ff !important;
+	text-align: center;
+}
