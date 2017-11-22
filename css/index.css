@@ -7,7 +7,16 @@ h1, h2, h3, h4, h5, h6, p, table, td, tr, th, a, ul, li, ol, small {
 	padding-bottom: 50px;
 }
 
-.table-fix, .table-fix td, .table-fix tr, .table-fix th {
-	border-color: #bac9ff !important;
-	text-align: center;
+.fix-picture-size {
+  height: 300px;
+}
+
+@media only screen and (max-width: 500px) {
+	.fix-picture-size {
+		height: 150px;
+	} 
+}
+
+img {
+  padding: 30px;
 }
