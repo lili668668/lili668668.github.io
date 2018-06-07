@@ -1,6 +1,6 @@
 # 我是誰？
 
-![](images/ballfish.png)
+![](picture/ballfish.png)
 
 ---
 
