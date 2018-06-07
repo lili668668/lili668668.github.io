@@ -1,9 +1,5 @@
 # 我是誰？
-
-![](picture/ballfish.png)
-
 ---
-
 ## 洪慈吟
                 
 - 英文：Tuzu-Yin Hong
