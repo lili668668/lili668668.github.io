@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p, table, td, tr, th, a, ul, li, ol, small {
 }
 
 .fix-picture-size {
-  height: 300px;
+  width: 300px;
 }
 
 @media only screen and (max-width: 500px) {
