@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Router } from 'react-router'
 import { Switch } from 'react-router-dom'
-import routes from './modules/routes'
+import routes from './routes'
 
 function App (props) {
   const { history } = props
