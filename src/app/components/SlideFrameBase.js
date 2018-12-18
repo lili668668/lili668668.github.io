@@ -6,9 +6,6 @@ import { bindKeyboard } from 'react-swipeable-views-utils'
 import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1
-  },
   leftButton: {
     position: 'relative',
     left: -20
@@ -33,11 +30,11 @@ function SlideFrameBase (props) {
           if (newIndex < 0) onChangeIndex(children.length - 1)
           else onChangeIndex(newIndex)
         }} />
-        <div className={classes.root}>
+        <Grid item xs>
           <BindKeyboardSwipeableViews index={index} onChangeIndex={onChangeIndex} enableMouseEvents>
             {children}
           </BindKeyboardSwipeableViews>
-        </div>
+        </Grid>
         <NextButton className={classes.rightButton} onClick={() => onChangeIndex((index + 1) % children.length)} />
       </Grid>
     </Frame>
