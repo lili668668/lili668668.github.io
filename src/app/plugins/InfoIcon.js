@@ -6,7 +6,7 @@ import compose from '../utils/compose'
 import InfoIconBase from '../components/InfoIconBase'
 import InfoIconButton from '../components/InfoIconButton'
 import FrameOfInfoIcon from '../components/FrameOfInfoIcon'
-import TooltipOfInfoIcon from '../components/TooltipOfInfoIcon'
+import Tooltip from '../components/Tooltip'
 
 const useNameStyles = makeStyles(theme => ({
   root: {
@@ -20,4 +20,4 @@ const Name = (props) => {
   return (<Typography className={classes.root} variant="caption">{props.children}</Typography>)
 }
 
-export default compose({ Frame: FrameOfInfoIcon, Icon: InfoIconButton, Name, Tooltip: TooltipOfInfoIcon })(InfoIconBase)
+export default compose({ Frame: FrameOfInfoIcon, Icon: InfoIconButton, Name, Tooltip })(InfoIconBase)

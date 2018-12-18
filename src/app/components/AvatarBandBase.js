@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function AvatarFrameBase (props) {
+function AvatarBandBase (props) {
   const {
     alt,
     src,
@@ -16,16 +16,16 @@ function AvatarFrameBase (props) {
   )
 }
 
-AvatarFrameBase.propTypes = {
+AvatarBandBase.propTypes = {
   alt: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   frameComponent: PropTypes.func.isRequired,
   avatarComponent: PropTypes.func.isRequired
 }
 
-AvatarFrameBase.components = {
+AvatarBandBase.components = {
   frameComponent: 'Frame',
   avatarComponent: 'Avatar'
 }
 
-export default AvatarFrameBase
+export default AvatarBandBase

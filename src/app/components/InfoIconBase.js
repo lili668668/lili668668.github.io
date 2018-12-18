@@ -16,12 +16,12 @@ function InfoIconBase (props) {
 
   return (
     <Frame>
-      <Tooltip title={tooltip}>
+      <Tooltip title={tooltip} placement="top">
         <span>
           <Icon alt={alt} src={src} href={href} />
         </span>
       </Tooltip>
-        {name && (<Name>{name}</Name>)}
+      {name && (<Name>{name}</Name>)}
     </Frame>
   )
 }

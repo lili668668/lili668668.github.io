@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
-import AvatarFrame from '../../../plugins/AvatarFrame'
+import AvatarBand from '../../../plugins/AvatarBand'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -13,7 +13,7 @@ function Avatar (props) {
   const classes = useStyles()
 
   return (
-    <AvatarFrame.Avatar {...props} className={classes.root} />
+    <AvatarBand.Avatar {...props} className={classes.root} />
   )
 }
 

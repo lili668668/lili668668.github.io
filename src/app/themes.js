@@ -15,7 +15,7 @@ export const light = createMuiTheme({
       contrastText: '#ffffff'
     },
     background: {
-      default: '#bdd7ee'
+      default: '#cadff1'
     }
   }
 })

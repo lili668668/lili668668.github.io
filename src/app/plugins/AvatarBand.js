@@ -1,6 +1,6 @@
 import compose from '../utils/compose'
-import AvatarFrameBase from '../components/AvatarFrameBase'
+import AvatarBandBase from '../components/AvatarBandBase'
 import Avatar from '@material-ui/core/Avatar'
 import CenterFrame from '../components/CenterFrame'
 
-export default compose({ Frame: CenterFrame, Avatar })(AvatarFrameBase)
+export default compose({ Frame: CenterFrame, Avatar })(AvatarBandBase)
