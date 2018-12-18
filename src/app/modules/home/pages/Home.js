@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next/hooks'
-import CardFrame from '../../../plugins/CardFrame'
+import CardFrame from '../../components/CardFrame'
 import AvatarBand from '../../../plugins/AvatarBand'
 import NameBand from '../../../plugins/NameBand'
 import InfoIconsBand from '../../../plugins/InfoIconsBand'
@@ -10,7 +10,7 @@ import Avatar from '../components/Avatar'
 import AvatarButton from '../../../components/AvatarButton'
 import info from '../../../../info'
 
-function HomePage (props) {
+function Home (props) {
   const [t] = useTranslation()
   return (
     <CardFrame>
@@ -30,4 +30,4 @@ function HomePage (props) {
   )
 }
 
-export default HomePage
+export default Home

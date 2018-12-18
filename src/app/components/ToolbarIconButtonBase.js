@@ -27,12 +27,12 @@ function ToolbarIconButtonBase (props) {
 }
 
 ToolbarIconButtonBase.propTypes = {
-  icon: PropTypes.element.isReqiured,
-  tooltip: PropTypes.string.isReqiured,
-  onClick: PropTypes.func.isReqiured,
+  icon: PropTypes.func,
+  tooltip: PropTypes.string,
+  onClick: PropTypes.func,
   className: PropTypes.string,
   style: PropTypes.object,
-  tooltipComponent: PropTypes.func.isReqiured
+  tooltipComponent: PropTypes.func
 }
 
 ToolbarIconButtonBase.components = {
