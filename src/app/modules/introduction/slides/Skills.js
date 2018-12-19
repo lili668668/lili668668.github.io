@@ -9,9 +9,6 @@ import SkillGroup from '../components/SkillGroup'
 import info from '../../../../info'
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    minHeight: 400
-  },
   padding: {
     padding: theme.spacing.unit
   }
@@ -23,7 +20,7 @@ function Me (props) {
   const [tab, setTab] = useState(0)
   const { skillTitle, skills } = info.skillGroups[tab]
   return (
-    <Grid container direction="column" className={classes.root}>
+    <Grid container direction="column">
       <Title>{t('Skill Tree')}</Title>
       <Tabs value={tab} onChange={(event, value) => setTab(value)}>
         {

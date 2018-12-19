@@ -7,10 +7,12 @@ import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles(theme => ({
   leftButton: {
+    zIndex: theme.zIndex.mobileStepper,
     position: 'relative',
     left: -20
   },
   rightButton: {
+    zIndex: theme.zIndex.mobileStepper,
     position: 'relative',
     right: -20
   }
@@ -25,17 +27,21 @@ function SlideFrameBase (props) {
   return (
     <Frame>
       <Grid container direction="row" alignItems="center" justify="space-between">
-        <PrevButton className={classes.leftButton} onClick={() => {
-          const newIndex = index - 1
-          if (newIndex < 0) onChangeIndex(children.length - 1)
-          else onChangeIndex(newIndex)
-        }} />
+        <Grid container item xs={1} justify="flex-start">
+          <PrevButton className={classes.leftButton} onClick={() => {
+            const newIndex = index - 1
+            if (newIndex < 0) onChangeIndex(children.length - 1)
+            else onChangeIndex(newIndex)
+          }} />
+        </Grid>
         <Grid item xs={10}>
           <BindKeyboardSwipeableViews index={index} onChangeIndex={onChangeIndex} enableMouseEvents>
             {children}
           </BindKeyboardSwipeableViews>
         </Grid>
-        <NextButton className={classes.rightButton} onClick={() => onChangeIndex((index + 1) % children.length)} />
+        <Grid container item xs={1} justify="flex-end">
+          <NextButton className={classes.rightButton} onClick={() => onChangeIndex((index + 1) % children.length)} />
+        </Grid>
       </Grid>
     </Frame>
   )
