@@ -1,6 +1,7 @@
 {
   "name": "Tzu-Yin Hong",
   "nickname": "ballfish",
+  "content": "TODO",
   "company": "Company",
   "wavenet": "Wavenet",
   "github": "GitHub",
@@ -15,5 +16,24 @@
   "GitHub repo": "GitHub repo",
   "About Me": "About Me",
   "Skill Tree": "Skill Tree",
-  "content": "TODO"
+  "Main Skills": "Main Skills",
+  "Secondary Skills": "Secondary Skills",
+  "React": "Frontend (React)",
+  "react_content": "TODO",
+  "Unity": "Game development (C#/Unity)",
+  "unity_content": "TODO",
+  "Crawler": "Crawler (Python, C#)",
+  "crawler_content": "TODO",
+  "Egg": "Backend (NodeJS/Egg, NodeJS/Express, NodeJS/Socketio)",
+  "egg_content": "TODO",
+  "Vue": "Frontend (Vue)",
+  "vue_content": "TODO",
+  "AngularJS": "Frontend (AngularJS)",
+  "angularjs_content": "TODO",
+  "Android": "Mobile App (Android)",
+  "android_content": "TODO",
+  "Rust": "Rust",
+  "rust_content": "TODO",
+  "Java": "Java",
+  "java_content": "TODO"
 }

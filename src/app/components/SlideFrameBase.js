@@ -24,13 +24,13 @@ function SlideFrameBase (props) {
   const { children, index = slideIndex, onChangeIndex = setSlideIndex, frameComponent: Frame, nextButtonComponent: NextButton, prevButtonComponent: PrevButton } = props
   return (
     <Frame>
-      <Grid container direction="row" alignItems="center">
+      <Grid container direction="row" alignItems="center" justify="space-between">
         <PrevButton className={classes.leftButton} onClick={() => {
           const newIndex = index - 1
           if (newIndex < 0) onChangeIndex(children.length - 1)
           else onChangeIndex(newIndex)
         }} />
-        <Grid item xs>
+        <Grid item xs={10}>
           <BindKeyboardSwipeableViews index={index} onChangeIndex={onChangeIndex} enableMouseEvents>
             {children}
           </BindKeyboardSwipeableViews>

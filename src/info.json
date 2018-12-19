@@ -3,6 +3,25 @@
   "nickname": "nickname",
   "titles": ["wavenet_work_title", "rust_social_work_title"],
   "content": "content",
+  "skillGroups": [
+    {
+      "title": "Main Skills", "skills": [
+        { "title": "React", "description": "react_content" },
+        { "title": "Crawler", "description": "crawler_content" },
+        { "title": "Unity", "description": "unity_content" }
+      ]
+    },
+    {
+      "title": "Secondary Skills", "skills": [
+        { "title": "Egg", "description": "egg_content" },
+        { "title": "Vue", "description": "vue_content" },
+        { "title": "AngularJS", "description": "angularjs_content" },
+        { "title": "Android", "description": "android_content" },
+        { "title": "Rust", "description": "rust_content" },
+        { "title": "Java", "description": "java_content" }
+      ]
+    }
+  ],
   "company": "wavenet",
   "companyUrl": "https://www.wavenet.com.tw/",
   "gmail": "lili668668@gmail.com",
