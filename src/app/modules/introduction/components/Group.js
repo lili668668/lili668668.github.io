@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { useTranslation } from 'react-i18next/hooks'
 import Typography from '@material-ui/core/Typography'
-import Skill from './Skill'
+import Item from './Item'
 
 const useStyles = makeStyles(theme => ({
   padding: {
@@ -10,19 +10,18 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-function SkillGroup (props) {
+function Group (props) {
   const classes = useStyles()
   const [t] = useTranslation()
-  const { title, skills } = props
+  const { items } = props
 
   return (
     <section className={classes.padding}>
-      <Typography variant="h5" className={classes.padding}>{t(title)}</Typography>
       {
-        skills.map(({ title, description }, index) => (<Skill key={index} title={title} description={description} />))
+        items.map(({ title, description }, index) => (<Item key={index} title={title} description={description} />))
       }
     </section>
   )
 }
 
-export default SkillGroup
+export default Group

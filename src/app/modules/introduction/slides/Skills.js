@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
 import Title from '../components/Title'
-import SkillGroup from '../components/SkillGroup'
+import Group from '../components/Group'
 import info from '../../../../info'
 
 const useStyles = makeStyles(theme => ({
@@ -14,22 +14,22 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-function Me (props) {
+function Skills (props) {
   const [t] = useTranslation()
   const classes = useStyles()
   const [tab, setTab] = useState(0)
-  const { skillTitle, skills } = info.skillGroups[tab]
+  const { items } = info.skillGroups[tab]
   return (
     <Grid container direction="column">
       <Title>{t('Skill Tree')}</Title>
-      <Tabs value={tab} onChange={(event, value) => setTab(value)}>
+      <Tabs value={tab} onChange={(event, value) => setTab(value)} fullWidth>
         {
           info.skillGroups.map(({title}) => (<Tab key={title} label={t(title)} />))
         }
       </Tabs>
-      <SkillGroup title={skillTitle} skills={skills} />
+      <Group items={items} />
     </Grid>
   )
 }
 
-export default Me
+export default Skills

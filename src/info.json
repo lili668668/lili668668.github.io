@@ -5,20 +5,46 @@
   "content": "content",
   "skillGroups": [
     {
-      "title": "Main Skills", "skills": [
+      "title": "Main Skills", "items": [
         { "title": "React", "description": "react_content" },
         { "title": "Crawler", "description": "crawler_content" },
         { "title": "Unity", "description": "unity_content" }
       ]
     },
     {
-      "title": "Secondary Skills", "skills": [
+      "title": "Secondary Skills", "items": [
         { "title": "Egg", "description": "egg_content" },
         { "title": "Vue", "description": "vue_content" },
         { "title": "AngularJS", "description": "angularjs_content" },
         { "title": "Android", "description": "android_content" },
         { "title": "Rust", "description": "rust_content" },
         { "title": "Java", "description": "java_content" }
+      ]
+    }
+  ],
+  "experienceGroups": [
+    {
+      "title": "Side Projects", "items": [
+        { "title": "e5", "description": "e5_content" },
+        { "title": "study", "description": "study_content" }
+      ]
+    },
+    {
+      "title": "Open Source Community", "items": [
+        { "title": "SITCON", "description": "sitcon_content" },
+        { "title": "MOPCON", "description": "mopcon_content" },
+        { "title": "Rust", "description": "rust_content" }
+      ]
+    },
+    {
+      "title": "Works", "items": [
+        { "title": "wavenet", "description": "wavenet_content" }
+      ]
+    },
+    {
+      "title": "University", "items": [
+        { "title": "BBS", "description": "bbs_content" },
+        { "title": "loremaster", "description": "loremaster_content" }
       ]
     }
   ],

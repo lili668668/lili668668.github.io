@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-function Skill (props) {
+function Item (props) {
   const classes = useStyles()
   const [t] = useTranslation()
   const { title, description } = props
@@ -22,4 +22,4 @@ function Skill (props) {
   )
 }
 
-export default Skill
+export default Item
