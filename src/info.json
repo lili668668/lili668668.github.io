@@ -24,12 +24,6 @@
   ],
   "experienceGroups": [
     {
-      "title": "Side Projects", "items": [
-        { "title": "e5", "description": "e5_content" },
-        { "title": "study", "description": "study_content" }
-      ]
-    },
-    {
       "title": "Open Source Community", "items": [
         { "title": "SITCON", "description": "sitcon_content" },
         { "title": "MOPCON", "description": "mopcon_content" },
@@ -43,10 +37,15 @@
     },
     {
       "title": "University", "items": [
+        { "title": "study", "description": "study_content" },
         { "title": "BBS", "description": "bbs_content" },
         { "title": "loremaster", "description": "loremaster_content" }
       ]
     }
+  ],
+  "apps": [
+    { "name": "e5", "link": "http://ballfi.sh/e5", "icon": "/images/e5.png", "description": "e5_content" },
+    { "name": "SuperCube", "link": "http://ballfish.io/SuperCubeWeb", "icon": "/images/supercube-icon.png", "description": "super_cube_content" }
   ],
   "company": "wavenet",
   "companyUrl": "https://www.wavenet.com.tw/",

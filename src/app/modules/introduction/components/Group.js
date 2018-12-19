@@ -1,7 +1,5 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
-import { useTranslation } from 'react-i18next/hooks'
-import Typography from '@material-ui/core/Typography'
 import Item from './Item'
 
 const useStyles = makeStyles(theme => ({
@@ -12,7 +10,6 @@ const useStyles = makeStyles(theme => ({
 
 function Group (props) {
   const classes = useStyles()
-  const [t] = useTranslation()
   const { items } = props
 
   return (

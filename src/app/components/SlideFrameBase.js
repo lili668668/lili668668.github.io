@@ -23,9 +23,9 @@ const BindKeyboardSwipeableViews = bindKeyboard(SwipeableViews)
 function SlideFrameBase (props) {
   const classes = useStyles()
   const [slideIndex, setSlideIndex] = useState(0)
-  const { children, index = slideIndex, onChangeIndex = setSlideIndex, frameComponent: Frame, nextButtonComponent: NextButton, prevButtonComponent: PrevButton } = props
+  const { children, index = slideIndex, onChangeIndex = setSlideIndex, onBack, frameComponent: Frame, nextButtonComponent: NextButton, prevButtonComponent: PrevButton } = props
   return (
-    <Frame>
+    <Frame onBack={onBack}>
       <Grid container direction="row" alignItems="center" justify="space-between">
         <Grid container item xs={1} justify="flex-start">
           <PrevButton className={classes.leftButton} onClick={() => {
@@ -51,6 +51,7 @@ SlideFrameBase.propTypes = {
   children: PropTypes.array,
   index: PropTypes.number,
   onChangeIndex: PropTypes.func,
+  onBack: PropTypes.func,
   frameComponent: PropTypes.func.isRequired,
   nextButtonComponent: PropTypes.func.isRequired,
   prevButtonComponent: PropTypes.func.isRequired

@@ -9,10 +9,16 @@ function Introduction (props) {
   const initIndex = slides.findIndex(slide => slide.name === match.params.description)
   const [index, setIndex] = initIndex < 0 ? useState(0) : useState(initIndex)
   return (
-    <SlideFrame index={index} onChangeIndex={(index) => {
-      history.push(`/introduction/${slides[index].name}`)
-      setIndex(index)
-    }}>
+    <SlideFrame
+      index={index}
+      onChangeIndex={(index) => {
+        history.push(`/introduction/${slides[index].name}`)
+        setIndex(index)
+      }}
+      onBack={() => {
+        history.push('/')
+      }}
+    >
       {children}
     </SlideFrame>
   )
