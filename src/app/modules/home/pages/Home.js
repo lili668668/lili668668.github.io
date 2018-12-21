@@ -12,11 +12,12 @@ import info from '../../../../info'
 
 function Home (props) {
   const [t] = useTranslation()
+  const titles = info.titles.map(title => t(title))
   return (
     <CardFrame>
       <AvatarBand alt={t(info.nickname)} src={info.avatar} avatarComponent={Avatar} />
       <NameBand name={t(info.name)} nickname={t(info.nickname)} />
-      <TitlesBand titles={info.titles} />
+      <TitlesBand titles={titles} />
       <InfoIconsBand>
         <InfoIcon name={t('company')} alt={t(info.company)} src={info.companyIcon} href={info.companyUrl} tooltip={t(info.company)} />
         <InfoIcon name={t('gmail')} alt={info.gmail} src={info.gmailIcon} href={`mailTo:${info.gmail}`} tooltip={info.gmail} />

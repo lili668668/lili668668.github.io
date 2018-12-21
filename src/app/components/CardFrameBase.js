@@ -6,6 +6,7 @@ function CardFrameBase (props) {
     children,
     onBack,
     appBarComponent: AppBar,
+    footerComponent: Footer,
     frameComponent: Frame,
     cardComponent: Card
   } = props
@@ -18,6 +19,7 @@ function CardFrameBase (props) {
           {children}
         </Card>
       </Frame>
+      <Footer />
     </React.Fragment>
   )
 }
@@ -26,12 +28,14 @@ CardFrameBase.propTypes = {
   children: PropTypes.any,
   onBack: PropTypes.func,
   appBarComponent: PropTypes.func.isRequired,
+  footerComponent: PropTypes.func.isRequired,
   frameComponent: PropTypes.func.isRequired,
   cardComponent: PropTypes.func.isRequired
 }
 
 CardFrameBase.components = {
   appBarComponent: 'AppBar',
+  footerComponent: 'Footer',
   frameComponent: 'Frame',
   cardComponent: 'Card'
 }

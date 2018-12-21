@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useTranslation } from 'react-i18next/hooks'
 
 function TitlesBandBase (props) {
-  const [t] = useTranslation()
   const {
     titles,
     frameComponent: Frame,
@@ -15,7 +13,7 @@ function TitlesBandBase (props) {
     <Frame>
       {
         titles
-          .map(title => <Title key={title}>{t(title)}</Title>)
+          .map(title => <Title key={title}>{title}</Title>)
           .reduce((prev, curr, index) => [prev, (<Separate key={index} />), curr])
       }
     </Frame>

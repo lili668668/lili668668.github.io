@@ -2,34 +2,35 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { makeStyles } from '@material-ui/styles'
-import MuiAppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    background: theme.palette.primary.dark,
-    boxShadow: 'none'
+    background: theme.palette.grey[500],
+    bottom: 0,
+    position: 'fixed',
+    width: '100%',
+    height: 51,
+    color: 'white',
+    paddingLeft: theme.spacing.unit
   }
 }))
 
-function AppBar (props) {
+function Footer (props) {
   const { children, className, style } = props
   const classes = useStyles()
   const root = classnames(classes.root, className)
 
   return (
-    <MuiAppBar position="fixed" className={root} style={style}>
-      <Toolbar>
-        {children}
-      </Toolbar>
-    </MuiAppBar>
+    <footer className={root} style={style}>
+      <p>{children}</p>
+    </footer>
   )
 }
 
-AppBar.propTypes = {
+Footer.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
   style: PropTypes.object
 }
 
-export default AppBar
+export default Footer
