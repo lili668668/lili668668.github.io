@@ -9,6 +9,7 @@ import CodeIcon from '@material-ui/icons/Code'
 import info from '../../../info'
 import AppBarBase from '../../components/AppBar'
 import ToolbarIconButton from '../../plugins/ToolbarIconButton'
+import AppsPopover from './AppsPopover'
 
 const useStyles = makeStyles(theme => ({
   grow: {
@@ -24,7 +25,8 @@ function AppBar (props) {
     <AppBarBase>
       {onBack !== undefined && (<ToolbarIconButton icon={ArrowBackIcon} tooltip={t('back')} onClick={onBack} />)}
       <div className={classes.grow} />
-      <ToolbarIconButton icon={AccountCircleIcon} tooltip={t('introduction')} onClick={() => {
+      <AppsPopover />
+      <ToolbarIconButton icon={AccountCircleIcon} tooltip={t('Introduction')} onClick={() => {
         history.push('/introduction/me')
       }} />
       <ToolbarIconButton icon={CodeIcon} tooltip={t('GitHub Repo')} onClick={() => {

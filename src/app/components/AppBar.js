@@ -8,7 +8,7 @@ import Toolbar from '@material-ui/core/Toolbar'
 const useStyles = makeStyles(theme => ({
   root: {
     background: theme.palette.primary.dark,
-    boxShadow: 'none'
+    boxShadow: theme.shadows[3]
   }
 }))
 
