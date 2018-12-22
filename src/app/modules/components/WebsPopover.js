@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
+import React from 'react'
 import { useTranslation } from 'react-i18next/hooks'
 import { makeStyles } from '@material-ui/styles'
-import Popover from '@material-ui/core/Popover'
 import MenuList from '@material-ui/core/MenuList'
 import MenuItem from '@material-ui/core/MenuItem'
 import Button from '@material-ui/core/Button'
+import MuiPopover from '@material-ui/core/Popover'
 import info from '../../../info'
+import PopoverPlugin from '../../plugins/Popover'
 
 const useStyles = makeStyles(theme => ({
   button: {
@@ -17,33 +17,34 @@ const useStyles = makeStyles(theme => ({
 function WebsPopover (props) {
   const classes = useStyles()
   const [t] = useTranslation()
-  const [anchorEl, setAnchorEl] = useState(null)
-  return (
-    <React.Fragment>
-      <Button className={classes.button} onClick={(event) => setAnchorEl(event.currentTarget)}>{t('Old Website')}</Button>
-      <Popover
-        onClose={() => setAnchorEl(null)}
-        open={Boolean(anchorEl)}
-        anchorEl={anchorEl}
-        anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'center',
-        }}
-        transformOrigin={{
-          vertical: 'bottom',
-          horizontal: 'center',
-        }}
-      >
-        <MenuList>
-          {info.oldWebs.map(app => (<MenuItem key={app.name} component="a" href={app.link}>{t(app.name)}</MenuItem>))}
-        </MenuList>
-      </Popover>
-    </React.Fragment>
-  )
-}
 
-WebsPopover.propTypes = {
-  onBack: PropTypes.func
+  const WebsButton = (props) => (<Button onClick={props.onClick} className={classes.button}>{props.children}</Button>)
+
+  const Popover = (props) => (
+    <MuiPopover
+      onClose={props.onClose}
+      open={props.open}
+      anchorEl={props.anchorEl}
+      anchorOrigin={{
+        vertical: 'top',
+        horizontal: 'center',
+      }}
+      transformOrigin={{
+        vertical: 'bottom',
+        horizontal: 'center',
+      }}
+    >
+      {props.children}
+    </MuiPopover>
+  )
+
+  return (
+    <PopoverPlugin buttonComponent={WebsButton} popoverComponent={Popover} buttonName={t('Old Website')}>
+      <MenuList>
+        {info.oldWebs.map(app => (<MenuItem key={app.name} component="a" href={app.link}>{t(app.name)}</MenuItem>))}
+      </MenuList>
+    </PopoverPlugin>
+  )
 }
 
 export default WebsPopover
