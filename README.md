@@ -1,44 +1,95 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 球魚 / 洪慈吟
 
-## Available Scripts
+潮網科技-軟體工程師 / Rust 社群推廣者
 
-In the project directory, you can run:
+> 我是球魚，本名洪慈吟，是一隻成長於高屏溪的魚，目前位於新店溪附近生活。生性內向害羞，喜歡寫程式與小說的宅魚，人生目標是賺大錢，夢想是貢獻開源界。
 
-### `npm start`
+## 技能樹
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 主技能
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- 前端 (React)
+  > 一年經驗，近一年有在接觸的技術，以 React 為主，有獨立開發能力
+- 網頁爬蟲 (Python, C#)
+  > 三年經驗，為四年前自學的技術，開發語言以 Python 為主，之前在實習公司時有用 C# 開發過，有獨立開發能力
+- 遊戲開發 (C#/Unity)
+  > 一年經驗，為兩年前自學的技術，開發語言以 C# 為主，遊戲引擎為 Unity3D，有獨立開發能力
 
-### `npm test`
+### 副技能
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 後端 (NodeJS/Egg, NodeJS/Express, NodeJS/Socketio)
+  > 以 NodeJS 為主，Express, socketio 一直有在研究，Egg 框架為一年前開始接觸，半獨立開發能力，並非強項
+- 前端 (Vue)
+  > 半年經驗，為一年前自學的技術，有獨立開發能力
+- 前端 (AngularJS)
+  > 半年經驗，僅修改過他人程式碼，無獨立開發能力
+- 手機應用開發 (Android)
+  > 半年經驗，大二時曾做過小專案，有獨立開發能力，但目前已與相關技術脫節略久
+- Rust
+  > 學習中，還未有實際專案
+- Java
+  > 為大學時，在演算法比賽使用的語言
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## 經驗
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 開源社群
 
-### `npm run eject`
+- SITCON 學生計算機年會
+  > 2015 年加入學生計算機年會，主要負責行政事項，曾擔任過行政組長與副召
+- MOPCON 行動科技年會
+  > 2016 年加入行動科技年會，主要負責行政事項
+- Rust 讀書會
+  > 2018 年主辦過 Rust 讀書會
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 工作
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 潮網科技
+  > 2018 年年初進入潮網科技，擔任軟體工程師，主要負責前端開發，使用 React, AngularJS
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 大學時期
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- 大專生研究計劃
+  > 大三時參與此計劃，並製作了一個教小孩寫程式的遊戲，使用 Unity3D，且獲獎大專生計劃傑出創作獎
+- 東吳大學電算中心網路暨維修組
+  > 大一進入電算中心擔任工讀生，主要負責 BBS 管理與清理機櫃
+- 恆鼎科技
+  > 2017 年於恆鼎科技實習一年，主要負責網路爬蟲，使用 C#
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Side Projects
+
+- [鸚鵡兄弟產生器](http://ballfi.sh/e5)
+  > 製作鸚鵡兄弟貼圖的產生器，使用 React 製作
+- [Super Cube](http://ballfish.io/SuperCubeWeb)
+  > 大專生研究計劃作品，教導小孩寫程式的小遊戲，使用 Unity3D 製作
+
+
+## 相關連結
+
+- [Gmail](mailto:lili668668@gmail.com)
+- [GitHub](https://github.com/lili668668)
+- [Facebook](https://fb.me/ballfish668668)
+- [Plurk](https://www.plurk.com/ballfish668)
+- [Medium](https://medium.com/@lili668668)
+- [Linkedin](https://www.linkedin.com/in/ballfish/)
+
+## 關於這個網站模板
+
+你可以用這個網站模板製作一個自己的網站
+
+1. Fork 這個專案，並把名字修改成 `<你自己的帳號>.github.io`
+
+2. Clone 到 local 端，並安裝相依套件
+
+`$ git clone http://github.com/<your-account>/<your-account>.github.io`
+
+`$ npm install`
+
+3. 修改 `src/info.json` 的資料
+
+4. Build 專案
+
+5. Push 到自己的 Repo
