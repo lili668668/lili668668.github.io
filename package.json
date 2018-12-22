@@ -1,11 +1,12 @@
 {
   "name": "ballfish-website",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
+  "homepage": "http://ballfish.io",
   "dependencies": {
-    "@material-ui/core": "^3.6.2",
+    "@material-ui/core": "^3.7.0",
     "@material-ui/icons": "^3.0.1",
-    "@material-ui/styles": "^3.0.0-alpha.3",
+    "@material-ui/styles": "3.0.0-alpha.4",
     "classnames": "^2.2.6",
     "gh-pages": "^2.0.1",
     "global": "^4.3.2",
