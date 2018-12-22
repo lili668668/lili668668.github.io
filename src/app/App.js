@@ -6,6 +6,7 @@ import { MuiThemeProvider } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import LoadingPage from './modules/components/LoadingPage'
+import ErrorBoundary from './modules/components/ErrorBoundary'
 import routes from './routes'
 import * as themes from './themes'
 
@@ -16,11 +17,13 @@ function App (props) {
       <ThemeProvider theme={themes.light}>
         <CssBaseline />
         <Router history={history}>
-          <React.Suspense fallback={<LoadingPage />}>
-            <Switch>
-              {routes}
-            </Switch>
-          </React.Suspense>
+          <ErrorBoundary>
+            <React.Suspense fallback={<LoadingPage />}>
+              <Switch>
+                {routes}
+              </Switch>
+            </React.Suspense>
+          </ErrorBoundary>
         </Router>
       </ThemeProvider>
     </MuiThemeProvider>
