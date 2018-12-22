@@ -13,6 +13,7 @@
   "wavenet_work_title": "Wavenet-Software Engineer",
   "rust_social_work_title": "Rust 社群推廣者",
   "Introduction": "Introduction",
+  "Old Website": "Old Website",
   "back": "Back",
   "GitHub repo": "GitHub repo",
   "About Me": "About Me",
@@ -59,5 +60,6 @@
   "BBS": "Soochow University Computer Center Network & Maintenance Division",
   "bbs_content": "TODO",
   "loremaster": "LoremMster Tech Inc.",
-  "loremaster_content": "TODO"
+  "loremaster_content": "TODO",
+  "2017": "2017"
 }

@@ -10,8 +10,7 @@ const useStyles = makeStyles(theme => ({
     position: 'fixed',
     width: '100%',
     height: 51,
-    color: 'white',
-    paddingLeft: theme.spacing.unit
+    padding: theme.spacing.unit
   }
 }))
 
@@ -22,7 +21,7 @@ function Footer (props) {
 
   return (
     <footer className={root} style={style}>
-      <p>{children}</p>
+      {children}
     </footer>
   )
 }

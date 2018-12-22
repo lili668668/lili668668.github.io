@@ -12,8 +12,8 @@ import AppsIconButton from '../../components/AppsIconButton'
 const useStyles = makeStyles(theme => ({
   card: {
     margin: theme.spacing.unit,
-    minWidth: 360,
-    minHeight: 180
+    minWidth: 180,
+    minHeight: 60
   }
 }))
 

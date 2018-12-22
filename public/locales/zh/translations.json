@@ -13,6 +13,7 @@
   "wavenet_work_title": "潮網科技-軟體工程師",
   "rust_social_work_title": "Rust 社群推廣者",
   "Introduction": "簡介",
+  "Old Website": "舊網站",
   "back": "上一頁",
   "GitHub repo": "GitHub repo",
   "About Me": "關於我",
@@ -59,5 +60,6 @@
   "BBS": "東吳大學電算中心網路暨維修組",
   "bbs_content": "大一進入電算中心擔任工讀生，主要負責 BBS 管理與清理機櫃",
   "loremaster": "恆鼎科技",
-  "loremaster_content": "2017 年於恆鼎科技實習一年，主要負責網路爬蟲，使用 C#"
+  "loremaster_content": "2017 年於恆鼎科技實習一年，主要負責網路爬蟲，使用 C#",
+  "2017": "2017"
 }
