@@ -37,8 +37,8 @@ function main () {
 
   const translatedInfo = translate(info, language)
 
-  const templatePath = `./readme-template.${language}.md`
-  const readmePath = '../../README.md'
+  const templatePath = `./src/readme/readme-template.${language}.md`
+  const readmePath = './README.md'
 
   const templateString = fs.readFileSync(templatePath, 'utf8')
 
