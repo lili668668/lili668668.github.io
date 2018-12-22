@@ -29,7 +29,7 @@
     "build": "react-scripts build; node ./src/readme/makeReamd;",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm build",
+    "predeploy": "npm run build",
     "deploy": "node ./deploy",
     "lint": "eslint src",
     "dev": "PORT=3411 npm start"
