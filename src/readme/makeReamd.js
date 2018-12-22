@@ -1,5 +1,6 @@
-const template = require('lodash/template')
 const fs = require('fs')
+const template = require('lodash/template')
+const git = require('simple-git')
 const info = require('../info')
 const zh = require('../../public/locales/zh/translations')
 const en = require('../../public/locales/en/translations')
@@ -32,6 +33,12 @@ function translate (thing, language) {
   return translateAny(thing)
 }
 
+function commit () {
+  git()
+    .add('README.md')
+    .commit('Update README.md')
+}
+
 function main () {
   const language = 'zh'
 
@@ -45,6 +52,8 @@ function main () {
   if (fs.existsSync(readmePath)) fs.unlinkSync(readmePath)
 
   fs.writeFileSync(readmePath, template(templateString)(translatedInfo))
+
+  commit()
 }
 
 main()
