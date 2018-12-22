@@ -7,6 +7,7 @@
     "@material-ui/icons": "^3.0.1",
     "@material-ui/styles": "^3.0.0-alpha.3",
     "classnames": "^2.2.6",
+    "gh-pages": "^2.0.1",
     "global": "^4.3.2",
     "history": "^4.7.2",
     "i18next": "^12.1.0",
@@ -29,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm build",
-    "deploy": "gh-pages -d build",
+    "deploy": "node ./deploy",
     "lint": "eslint src",
     "dev": "PORT=3411 npm start"
   },
