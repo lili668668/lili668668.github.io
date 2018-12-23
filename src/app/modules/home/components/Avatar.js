@@ -1,20 +1,20 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import AvatarBand from '../../../plugins/AvatarBand'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   root: {
     width: 180,
     height: 180
   }
-}))
+})
 
 function Avatar (props) {
-  const classes = useStyles()
+  const { classes } = props
 
   return (
     <AvatarBand.Avatar {...props} className={classes.root} />
   )
 }
 
-export default Avatar
+export default withStyles(styles)(Avatar)

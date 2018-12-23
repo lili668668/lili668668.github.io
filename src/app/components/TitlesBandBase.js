@@ -22,9 +22,9 @@ function TitlesBandBase (props) {
 
 TitlesBandBase.propTypes = {
   titles: PropTypes.arrayOf(PropTypes.string).isRequired,
-  frameComponent: PropTypes.func.isRequired,
-  titleComponent: PropTypes.func.isRequired,
-  separateComponent: PropTypes.func.isRequired
+  frameComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  titleComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  separateComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired
 }
 
 TitlesBandBase.components = {

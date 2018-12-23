@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next/hooks'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import MenuList from '@material-ui/core/MenuList'
 import MenuItem from '@material-ui/core/MenuItem'
 import Button from '@material-ui/core/Button'
@@ -8,14 +8,14 @@ import MuiPopover from '@material-ui/core/Popover'
 import info from '../../../info'
 import PopoverPlugin from '../../plugins/Popover'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   button: {
     color: 'white'
   }
-}))
+})
 
 function WebsPopover (props) {
-  const classes = useStyles()
+  const { classes } = props
   const [t] = useTranslation()
 
   const WebsButton = (props) => (<Button onClick={props.onClick} className={classes.button}>{props.children}</Button>)
@@ -47,4 +47,4 @@ function WebsPopover (props) {
   )
 }
 
-export default WebsPopover
+export default withStyles(styles)(WebsPopover)

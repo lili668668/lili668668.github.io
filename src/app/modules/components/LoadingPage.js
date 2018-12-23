@@ -1,17 +1,17 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import Grid from '@material-ui/core/Grid'
 import CardFrame from '../../plugins/CardFrame'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   root: {
     minHeight: 400
   }
-}))
+})
 
 function LoadingPage (props) {
-  const classes = useStyles()
+  const { classes } = props
   return (
     <CardFrame>
       <Grid container direction="column" justify="center" alignItems="center" className={classes.root}>
@@ -21,4 +21,4 @@ function LoadingPage (props) {
   )
 }
 
-export default LoadingPage
+export default withStyles(styles)(LoadingPage)

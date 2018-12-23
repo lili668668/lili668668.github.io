@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import classnames from 'classnames'
 import { useTranslation } from 'react-i18next/hooks'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import Tabs from '@material-ui/core/Tabs'
@@ -9,7 +9,7 @@ import Tab from '@material-ui/core/Tab'
 import Title from '../components/Title'
 import info from '../../../../info'
 
-const useStyles = makeStyles(theme => {
+const styles = theme => {
   const style = {
     padding: {
       padding: theme.spacing.unit
@@ -31,10 +31,10 @@ const useStyles = makeStyles(theme => {
       }
     })
   return style
-})
+}
 
 function SideProjects (props) {
-  const classes = useStyles()
+  const { classes } = props
   const [t] = useTranslation()
   const [tab, setTab] = useState(0)
   const app = info.apps[tab]
@@ -53,4 +53,4 @@ function SideProjects (props) {
   )
 }
 
-export default SideProjects
+export default withStyles(styles)(SideProjects)

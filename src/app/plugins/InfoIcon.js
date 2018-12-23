@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 
 import compose from '../utils/compose'
@@ -8,16 +8,18 @@ import InfoIconButton from '../components/InfoIconButton'
 import FrameOfInfoIcon from '../components/FrameOfInfoIcon'
 import Tooltip from '../components/Tooltip'
 
-const useNameStyles = makeStyles(theme => ({
+const nameStyles = theme => ({
   root: {
     paddingTop: theme.spacing.unit,
     paddingBottom: theme.spacing.unit
   }
-}))
+})
 
-const Name = (props) => {
-  const classes = useNameStyles()
+const NameBase = (props) => {
+  const { classes } = props
   return (<Typography className={classes.root} variant="caption">{props.children}</Typography>)
 }
+
+const Name = withStyles(nameStyles)(NameBase)
 
 export default compose({ Frame: FrameOfInfoIcon, Icon: InfoIconButton, Name, Tooltip })(InfoIconBase)

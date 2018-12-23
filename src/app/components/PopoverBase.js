@@ -22,8 +22,8 @@ function PopoverBase (props) {
 PopoverBase.propTypes = {
   children: PropTypes.any,
   buttonName: PropTypes.string,
-  buttonComponent: PropTypes.func.isRequired,
-  popoverComponent: PropTypes.func.isRequired
+  buttonComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  popoverComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired
 }
 
 PopoverBase.components = {

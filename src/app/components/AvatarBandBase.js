@@ -19,8 +19,8 @@ function AvatarBandBase (props) {
 AvatarBandBase.propTypes = {
   alt: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
-  frameComponent: PropTypes.func.isRequired,
-  avatarComponent: PropTypes.func.isRequired
+  frameComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  avatarComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired
 }
 
 AvatarBandBase.components = {

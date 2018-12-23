@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   root: {
     background: theme.palette.grey[500],
     bottom: 0,
@@ -12,11 +12,10 @@ const useStyles = makeStyles(theme => ({
     height: 51,
     padding: theme.spacing.unit
   }
-}))
+})
 
 function Footer (props) {
-  const { children, className, style } = props
-  const classes = useStyles()
+  const { classes, children, className, style } = props
   const root = classnames(classes.root, className)
 
   return (
@@ -32,4 +31,4 @@ Footer.propTypes = {
   style: PropTypes.object
 }
 
-export default Footer
+export default withStyles(styles)(Footer)

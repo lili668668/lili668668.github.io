@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import ButtonBase from '@material-ui/core/ButtonBase'
 import grey from '@material-ui/core/colors/grey'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   root: {
     borderRadius: '50%',
     width: 36,
@@ -14,11 +14,10 @@ const useStyles = makeStyles(theme => ({
     color: 'white',
     fontWeight: 'bold'
   }
-}))
+})
 
 function AvatarButton (props) {
-  const { src, href, className, style } = props
-  const classes = useStyles()
+  const { classes, src, href, className, style } = props
   const root = classnames(classes.root, className)
 
   return (
@@ -36,4 +35,4 @@ AvatarButton.propTypes = {
   style: PropTypes.object
 }
 
-export default AvatarButton
+export default withStyles(styles)(AvatarButton)

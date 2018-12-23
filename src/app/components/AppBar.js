@@ -1,20 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import MuiAppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   root: {
     background: theme.palette.primary.dark,
     boxShadow: theme.shadows[3]
   }
-}))
+})
 
 function AppBar (props) {
-  const { children, className, style } = props
-  const classes = useStyles()
+  const { classes, children, className, style } = props
   const root = classnames(classes.root, className)
 
   return (
@@ -32,4 +31,4 @@ AppBar.propTypes = {
   style: PropTypes.object
 }
 
-export default AppBar
+export default withStyles(styles)(AppBar)

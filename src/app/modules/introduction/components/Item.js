@@ -1,18 +1,17 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import { useTranslation } from 'react-i18next/hooks'
 import Typography from '@material-ui/core/Typography'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   padding: {
     padding: theme.spacing.unit
   }
-}))
+})
 
 function Item (props) {
-  const classes = useStyles()
   const [t] = useTranslation()
-  const { title, description } = props
+  const { classes, title, description } = props
 
   return (
     <section className={classes.padding}>
@@ -22,4 +21,4 @@ function Item (props) {
   )
 }
 
-export default Item
+export default withStyles(styles)(Item)

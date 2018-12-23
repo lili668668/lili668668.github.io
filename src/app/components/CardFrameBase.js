@@ -27,10 +27,10 @@ function CardFrameBase (props) {
 CardFrameBase.propTypes = {
   children: PropTypes.any,
   onBack: PropTypes.func,
-  appBarComponent: PropTypes.func.isRequired,
-  footerComponent: PropTypes.func.isRequired,
-  frameComponent: PropTypes.func.isRequired,
-  cardComponent: PropTypes.func.isRequired
+  appBarComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  footerComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  frameComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  cardComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired
 }
 
 CardFrameBase.components = {

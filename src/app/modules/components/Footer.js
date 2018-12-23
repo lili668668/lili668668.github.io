@@ -1,18 +1,18 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import FooterBase from '../../components/Footer'
 import WebsPopover from './WebsPopover'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   text: {
     color: 'white'
   }
-}))
+})
 
 function Footer (props) {
-  const classes = useStyles()
+  const { classes } = props
   return (
     <FooterBase>
       <Grid container direction="row" justify="space-between" alignItems="center">
@@ -23,4 +23,4 @@ function Footer (props) {
   )
 }
 
-export default Footer
+export default withStyles(styles)(Footer)

@@ -1,20 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import ButtonBase from '@material-ui/core/ButtonBase'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   root: {
     borderRadius: '50%',
     width: 36,
     height: 36
   }
-}))
+})
 
 function InfoIconButton (props) {
-  const { alt, src, href, className, style } = props
-  const classes = useStyles()
+  const { classes, alt, src, href, className, style } = props
   const root = classnames(classes.root, className)
 
   return (
@@ -33,4 +32,4 @@ InfoIconButton.propTypes = {
   style: PropTypes.object
 }
 
-export default InfoIconButton
+export default withStyles(styles)(InfoIconButton)

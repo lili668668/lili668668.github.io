@@ -16,7 +16,7 @@ function InfoIconsBandBase (props) {
 
 InfoIconsBandBase.propTypes = {
   children: PropTypes.any,
-  frameComponent: PropTypes.func.isRequired
+  frameComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired
 }
 
 InfoIconsBandBase.components = {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next/hooks'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import AppsIcon from '@material-ui/icons/Apps'
 import MuiPopover from '@material-ui/core/Popover'
 import Grid from '@material-ui/core/Grid'
@@ -9,16 +9,16 @@ import ToolbarIconButton from '../../plugins/ToolbarIconButton'
 import PopoverPlugin from '../../plugins/Popover'
 import AppsIconButton from '../../components/AppsIconButton'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   card: {
     margin: theme.spacing.unit,
     minWidth: 180,
     minHeight: 60
   }
-}))
+})
 
 function AppsPopover (props) {
-  const classes = useStyles()
+  const { classes } = props
   const [t] = useTranslation()
 
   const AppsButton = (props) => (<ToolbarIconButton icon={AppsIcon} tooltip={props.children} onClick={props.onClick} />)
@@ -50,4 +50,4 @@ function AppsPopover (props) {
   )
 }
 
-export default AppsPopover
+export default withStyles(styles)(AppsPopover)

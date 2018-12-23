@@ -1,27 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classnames from 'classnames'
-import { makeStyles } from '@material-ui/styles'
-import IconButton from '@material-ui/core/IconButton'
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    width: 48,
-    height: 48,
-    color: 'white'
-  }
-}))
 
 function ToolbarIconButtonBase (props) {
-  const { icon: Icon, tooltip, onClick, className, style, tooltipComponent: Tooltip } = props
-  const classes = useStyles()
-  const root = classnames(classes.root, className)
+  const { icon, onClick, tooltip, tooltipComponent: Tooltip, buttonComponent: Button } = props
 
   return (
     <Tooltip title={tooltip} placement="bottom">
-      <IconButton onClick={onClick} className={root} style={style}>
-        {<Icon />}
-      </IconButton>
+      <Button icon={icon} onClick={onClick} />
     </Tooltip>
   )
 }
@@ -30,13 +15,13 @@ ToolbarIconButtonBase.propTypes = {
   icon: PropTypes.func,
   tooltip: PropTypes.string,
   onClick: PropTypes.func,
-  className: PropTypes.string,
-  style: PropTypes.object,
-  tooltipComponent: PropTypes.func
+  tooltipComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  buttonComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired
 }
 
 ToolbarIconButtonBase.components = {
-  tooltipComponent: 'Tooltip'
+  tooltipComponent: 'Tooltip',
+  buttonComponent: 'Button'
 }
 
 export default ToolbarIconButtonBase

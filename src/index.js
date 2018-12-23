@@ -1,12 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { createHashHistory } from 'history'
-import { install } from '@material-ui/styles'
 import App from './app'
 import * as serviceWorker from './serviceWorker'
 import './i18n'
-
-install()
 
 const history = createHashHistory()
 

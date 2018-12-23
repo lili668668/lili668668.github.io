@@ -32,10 +32,10 @@ InfoIconBase.propTypes = {
   src: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
   tooltip: PropTypes.string,
-  frameComponent: PropTypes.func.isRequired,
-  iconComponent: PropTypes.func.isRequired,
-  nameComponent: PropTypes.func.isRequired,
-  tooltipComponent: PropTypes.func.isRequired
+  frameComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  iconComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  nameComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  tooltipComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired
 }
 
 InfoIconBase.components = {

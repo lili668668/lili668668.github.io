@@ -23,10 +23,10 @@ function NameBandBase (props) {
 NameBandBase.propTypes = {
   name: PropTypes.string.isRequired,
   nickname: PropTypes.string.isRequired,
-  frameComponent: PropTypes.func.isRequired,
-  nameComponent: PropTypes.func.isRequired,
-  nicknameComponent: PropTypes.func.isRequired,
-  separateComponent: PropTypes.func.isRequired
+  frameComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  nameComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  nicknameComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  separateComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired
 }
 
 NameBandBase.components = {

@@ -1,15 +1,15 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import Item from './Item'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   padding: {
     padding: theme.spacing.unit
   }
-}))
+})
 
 function Group (props) {
-  const classes = useStyles()
+  const { classes } = props
   const { items } = props
 
   return (
@@ -21,4 +21,4 @@ function Group (props) {
   )
 }
 
-export default Group
+export default withStyles(styles)(Group)

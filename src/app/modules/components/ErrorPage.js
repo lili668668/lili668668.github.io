@@ -1,13 +1,13 @@
 import React from 'react'
 import classnames from 'classnames'
-import { makeStyles } from '@material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import ErrorIcon from '@material-ui/icons/Error'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import CardFrame from '../../plugins/CardFrame'
 import info from '../../../info'
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
   root: {
     minHeight: 400
   },
@@ -21,10 +21,10 @@ const useStyles = makeStyles(theme => ({
   anchor: {
     color: theme.palette.error.dark
   }
-}))
+})
 
 function ErrorPage (props) {
-  const classes = useStyles()
+  const { classes } = props
   return (
     <CardFrame>
       <Grid container direction="column" justify="center" alignItems="center" className={classes.root}>
@@ -36,4 +36,4 @@ function ErrorPage (props) {
   )
 }
 
-export default ErrorPage
+export default withStyles(styles)(ErrorPage)
