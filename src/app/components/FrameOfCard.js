@@ -8,7 +8,7 @@ function FrameOfCard (props) {
   return (
     <Grid container>
       <Grid item xs />
-      <Grid item xs={8} sm={4} className={className} style={style}>
+      <Grid item xs={12} sm={10} md={8} lg={4} className={className} style={style}>
         {children}
       </Grid>
       <Grid item xs />
