@@ -90,10 +90,16 @@
 
 3. 修改 `src/info.json` 與 `deploy.js` 的資料
 
-4. 佈署專案
+4. 刪除 `public/CNAME` 的檔案，或將 CNAME 修改成自己的 domain name
+
+5. 佈署專案
 
   `$ npm run deploy`
 
-5. Push 到 GutHub 上
+6. Push 到 GutHub 上
+
+  `$ git add .`
+
+  `$ git commit`
 
   `$ git push origin react-website`
