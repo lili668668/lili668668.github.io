@@ -88,7 +88,7 @@
 
 `$ npm install`
 
-3. 修改 `src/info.json` 的資料
+3. 修改 `src/info.json` 與 `deploy.js` 的資料
 
 4. Build 專案
 
