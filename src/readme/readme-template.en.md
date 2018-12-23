@@ -60,7 +60,7 @@ You can use this template to make your own website.
 
 `$ npm install`
 
-3. Modify `src/info.json` information
+3. Modify `src/info.json` and `deploy.js` information
 
 4. Build project
 
