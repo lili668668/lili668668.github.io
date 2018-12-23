@@ -93,3 +93,7 @@
 4. 佈署專案
 
   `$ npm run deploy`
+
+5. Push 到 GutHub 上
+
+  `$ git push origin react-website`
