@@ -56,12 +56,16 @@ You can use this template to make your own website.
 
 2. Clone to local and install dependancies
 
-`$ git clone http://github.com/<your-account>/<your-account>.github.io`
+  `$ git clone http://github.com/<your-account>/<your-account>.github.io`
 
-`$ npm install`
+  `$ npm install`
 
 3. Modify `src/info.json` and `deploy.js` information
 
-4. Build project
+4. Deploy project
 
-5. Push to your repo
+  `$ npm run deploy`
+
+5. Push to your GitHub
+
+  `$ git push origin react-website`

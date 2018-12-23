@@ -56,12 +56,16 @@
 
 2. Clone 到 local 端，並安裝相依套件
 
-`$ git clone http://github.com/<your-account>/<your-account>.github.io`
+  `$ git clone http://github.com/<your-account>/<your-account>.github.io`
 
-`$ npm install`
+  `$ npm install`
 
 3. 修改 `src/info.json` 與 `deploy.js` 的資料
 
-4. Build 專案
+4. 佈署專案
 
-5. Push 到自己的 Repo
+  `$ npm run deploy`
+
+5. Push 到 GutHub 上
+
+  `$ git push origin react-website`
