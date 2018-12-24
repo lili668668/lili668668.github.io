@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import FooterBase from '../../components/Footer'
 import WebsPopover from './WebsPopover'
+import LanguagePopover from './LanguagePopover'
 
 const styles = theme => ({
   text: {
@@ -17,7 +18,10 @@ function Footer (props) {
     <FooterBase>
       <Grid container direction="row" justify="space-between" alignItems="center">
         <Typography className={classes.text}>© 2018 ballfish</Typography>
-        <WebsPopover />
+        <Grid item>
+          <LanguagePopover />
+          <WebsPopover />
+        </Grid>
       </Grid>
     </FooterBase>
   )

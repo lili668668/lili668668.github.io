@@ -9,8 +9,7 @@ i18n
   .use(initReactI18n)
   .init({
     load: 'currentOnly',
-    fallbackLng: 'zh',
-    lng: 'zh',
+    fallbackLng: ['zh', 'en'],
 
     backend: {
       loadPath: 'locales/{{lng}}/{{ns}}.json'

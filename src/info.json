@@ -1,7 +1,7 @@
 {
   "name": "name",
   "nickname": "nickname",
-  "titles": ["wavenet_work_title", "rust_social_work_title"],
+  "titles": ["wavenet_work_title"],
   "content": "content",
   "skillGroups": [
     {
