@@ -4,6 +4,8 @@
 
 > <%= content %>
 
+- [英文](https://github.com/lili668668/lili668668.github.io/blob/react-website/README.md)
+
 ## 技能樹
 
 <%

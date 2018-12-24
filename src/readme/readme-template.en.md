@@ -4,6 +4,8 @@
 
 > <%= content %>
 
+- [Chinese](https://github.com/lili668668/lili668668.github.io/blob/react-website/README.zh.md)
+
 ## Skills
 
 <%
