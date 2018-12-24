@@ -1,73 +1,73 @@
-# 球魚 / 洪慈吟
+# ballfish / Tzu-Yin Hong
 
-潮網科技-軟體工程師
+Wavenet-Software Engineer
 
-> 我是球魚，本名洪慈吟，是一隻成長於高屏溪的魚，目前位於新店溪附近生活。生性內向害羞，喜歡寫程式與小說的宅魚，人生目標是賺大錢，夢想是貢獻開源界。
+> I am ballfish. Real name is Tzu-Yin Hong. I come from Kaohsiung City. I am living in Taipei City now. I am introverted and shy. I like to program and write novel. My dream is contributing open source commuity.
 
-## 技能樹
+## Skills
 
-### 主技能
+### Main Skills
 
-- 前端 (React)
-  > 一年經驗，近一年有在接觸的技術，以 React 為主，有獨立開發能力
-- 網頁爬蟲 (Python, C#)
-  > 三年經驗，為四年前自學的技術，開發語言以 Python 為主，之前在實習公司時有用 C# 開發過，有獨立開發能力
-- 遊戲開發 (C#/Unity)
-  > 一年經驗，為兩年前自學的技術，開發語言以 C# 為主，遊戲引擎為 Unity3D，有獨立開發能力
+- Frontend (React)
+  > This website is developed with React.
+- Crawler (Python, C#)
+  > I have developed a web crawler during my internship.
+- Game development (C#/Unity)
+  > I have developed a game with Unity 3D. The game is to teach children about program logic.
 
-### 副技能
+### Secondary Skills
 
-- 後端 (NodeJS/Egg, NodeJS/Express, NodeJS/Socketio)
-  > 以 NodeJS 為主，Express, socketio 一直有在研究，Egg 框架為一年前開始接觸，半獨立開發能力，並非強項
-- 前端 (Vue)
-  > 半年經驗，為一年前自學的技術，有獨立開發能力
-- 前端 (AngularJS)
-  > 半年經驗，僅修改過他人程式碼，無獨立開發能力
-- 手機應用開發 (Android)
-  > 半年經驗，大二時曾做過小專案，有獨立開發能力，但目前已與相關技術脫節略久
+- Backend (NodeJS/Egg, NodeJS/Express, NodeJS/Socketio)
+  > I have a little experience in developing backend.
+- Frontend (Vue)
+  > I have developed a little game website with Vue. 
+- Frontend (AngularJS)
+  > I have a little experience in debugging AngularJS program.
+- Mobile App (Android)
+  > When I was a sophomore, I have develop an Android app.
 - Rust
-  > 學習中，還未有實際專案
+  > I am learning Rust now.
 - Java
-  > 為大學時，在演算法比賽使用的語言
+  > Java is my first programming language to learn.
 
 
 
-## 經驗
+## Experience
 
-### 開源社群
+### Open Source Community
 
-- SITCON 學生計算機年會
-  > 2015 年加入學生計算機年會，主要負責行政事項，曾擔任過行政組長與副召
-- MOPCON 行動科技年會
-  > 2016 年加入行動科技年會，主要負責行政事項
-- Rust 讀書會
-  > 2018 年主辦過 Rust 讀書會
+- Students' Information Technology Conference
+  > I join to SITCON in 2015. I am in charge of administrative work.
+- Mobile Open Platform Conference
+  > I join to MOPCON in 2016. I am aslo in charge of administrative work.
+- Rust book club
+  > I hold a book club to learn Rust language.
 
-### 工作
+### Works
 
-- 潮網科技
-  > 2018 年年初進入潮網科技，擔任軟體工程師，主要負責前端開發，使用 React, AngularJS
+- Wavenet
+  > I work at wavenet from January in 2018 to now.
 
-### 大學時期
+### University
 
-- 大專生研究計劃
-  > 大三時參與此計劃，並製作了一個教小孩寫程式的遊戲，使用 Unity3D，且獲獎大專生計劃傑出創作獎
-- 東吳大學電算中心網路暨維修組
-  > 大一進入電算中心擔任工讀生，主要負責 BBS 管理與清理機櫃
-- 恆鼎科技
-  > 2017 年於恆鼎科技實習一年，主要負責網路爬蟲，使用 C#
+- College student research program
+  > I developed a little game to teach children program logic
+- Soochow University Computer Center Network & Maintenance Division
+  > I used to work at school computer center. The job content is to manage BBS and to clean the cabinet. 
+- LoremMaster Tech Inc.
+  > I used to work at Loremaster Tech Inc. as an intern. The job content is to develop a web crawler.
 
 
 
 ## Side Projects
 
-- [鸚鵡兄弟產生器](http://ballfi.sh/e5)
-  > 製作鸚鵡兄弟貼圖的產生器，使用 React 製作
+- [Docomo Poinko Textmaker](http://ballfi.sh/e5)
+  > It is an funny image generator.
 - [Super Cube](http://ballfish.io/SuperCubeWeb)
-  > 大專生研究計劃作品，教導小孩寫程式的小遊戲，使用 Unity3D 製作
+  > It is a little game to teach children program logic.
 
 
-## 相關連結
+## Contact And Other Links
 
 - [Gmail](mailto:lili668668@gmail.com)
 - [GitHub](https://github.com/lili668668)
@@ -76,27 +76,27 @@
 - [Medium](https://medium.com/@lili668668)
 - [Linkedin](https://www.linkedin.com/in/ballfish/)
 
-## 關於這個網站模板
+## About the template
 
-你可以用這個網站模板製作一個自己的網站
+You can use this template to make your own website.
 
-1. Fork 這個專案，並把名字修改成 `<你自己的帳號>.github.io`
+1. Fork this project
 
-2. Clone 到 local 端，並安裝相依套件
+2. Clone to local and install dependancies
 
   `$ git clone http://github.com/<your-account>/<your-account>.github.io`
 
   `$ npm install`
 
-3. 修改 `src/info.json` 與 `deploy.js` 的資料
+3. Modify `src/info.json` and `deploy.js` information
 
-4. 刪除 `public/CNAME` 的檔案，或將 CNAME 修改成自己的 domain name
+4. Remove `public/CNAME` or change CNAME to your own domain name
 
-5. 佈署專案
+5. Deploy project
 
   `$ npm run deploy`
 
-6. Push 到 GutHub 上
+6. Push to your GitHub
 
   `$ git add .`
 
