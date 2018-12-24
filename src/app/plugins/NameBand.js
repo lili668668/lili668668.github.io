@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 
 import compose from '../utils/compose'
-import NameBandBase from '../components/NameBandBase'
+import NameBandBase from '../templates/NameBandBase'
 import CenterFrame from '../components/CenterFrame'
 
 const frameStyles = theme => ({

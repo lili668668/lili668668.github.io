@@ -1,5 +1,5 @@
 import compose from '../utils/compose'
-import CardFrameBase from '../components/CardFrameBase'
+import CardFrameBase from '../templates/CardFrameBase'
 import Card from '../components/Card'
 import FrameOfCard from '../components/FrameOfCard'
 import AppBar from '../components/AppBar'

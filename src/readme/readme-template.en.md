@@ -62,10 +62,16 @@ You can use this template to make your own website.
 
 3. Modify `src/info.json` and `deploy.js` information
 
-4. Deploy project
+4. Remove `public/CNAME` or change CNAME to your own domain name
+
+5. Deploy project
 
   `$ npm run deploy`
 
-5. Push to your GitHub
+6. Push to your GitHub
+
+  `$ git add .`
+
+  `$ git commit`
 
   `$ git push origin react-website`

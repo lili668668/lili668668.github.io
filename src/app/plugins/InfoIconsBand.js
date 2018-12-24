@@ -2,7 +2,7 @@ import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 
 import compose from '../utils/compose'
-import InfoIconsBandBase from '../components/InfoIconsBandBase'
+import InfoIconsBandBase from '../templates/InfoIconsBandBase'
 import SpaceAroundFrame from '../components/SpaceAroundFrame'
 
 const frameStyles = theme => ({

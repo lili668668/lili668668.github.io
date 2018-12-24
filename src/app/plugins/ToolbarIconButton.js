@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 import IconButton from '@material-ui/core/IconButton'
 
 import compose from '../utils/compose'
-import ToolbarIconButtonBase from '../components/ToolbarIconButtonBase'
+import ToolbarIconButtonBase from '../templates/ToolbarIconButtonBase'
 import Tooltip from '../components/Tooltip'
 
 const styles = theme => ({

@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 
 import compose from '../utils/compose'
-import InfoIconBase from '../components/InfoIconBase'
+import InfoIconBase from '../templates/InfoIconBase'
 import InfoIconButton from '../components/InfoIconButton'
 import FrameOfInfoIcon from '../components/FrameOfInfoIcon'
 import Tooltip from '../components/Tooltip'

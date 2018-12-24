@@ -1,5 +1,5 @@
 import compose from '../utils/compose'
-import AvatarBandBase from '../components/AvatarBandBase'
+import AvatarBandBase from '../templates/AvatarBandBase'
 import Avatar from '@material-ui/core/Avatar'
 import CenterFrame from '../components/CenterFrame'
 

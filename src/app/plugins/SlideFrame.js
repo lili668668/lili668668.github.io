@@ -7,7 +7,7 @@ import LeftIcon from '@material-ui/icons/ChevronLeft'
 import RightIcon from '@material-ui/icons/ChevronRight'
 
 import compose from '../utils/compose'
-import SlideFrameBase from '../components/SlideFrameBase'
+import SlideFrameBase from '../templates/SlideFrameBase'
 import CardFrame from './CardFrame'
 
 const buttonStyles = theme => ({
