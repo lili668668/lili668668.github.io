@@ -10,6 +10,7 @@ i18n
   .init({
     load: 'currentOnly',
     fallbackLng: ['zh', 'en'],
+    lng: 'zh',
 
     backend: {
       loadPath: 'locales/{{lng}}/{{ns}}.json'
