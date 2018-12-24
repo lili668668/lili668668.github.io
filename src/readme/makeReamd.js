@@ -35,23 +35,24 @@ function translate (thing, language) {
 
 function commit () {
   git()
-    .add('README.md')
-    .commit('Update README.md')
+    .add('README.*')
+    .commit('Update README files')
 }
 
 function main () {
-  const language = 'zh'
+  const languages = ['en', 'zh']
+  const defaultLanguage = 'en'
 
-  const translatedInfo = translate(info, language)
+  languages.forEach(lng => {
+    const translatedInfo = translate(info, lng)
 
-  const templatePath = `./src/readme/readme-template.${language}.md`
-  const readmePath = './README.md'
+    const templatePath = `./src/readme/readme-template.${lng}.md`
+    const readmePath = lng === defaultLanguage ? './README.md' : `./README.${lng}.md`
 
-  const templateString = fs.readFileSync(templatePath, 'utf8')
-
-  if (fs.existsSync(readmePath)) fs.unlinkSync(readmePath)
-
-  fs.writeFileSync(readmePath, template(templateString)(translatedInfo))
+    const templateString = fs.readFileSync(templatePath, 'utf8')
+    if (fs.existsSync(readmePath)) fs.unlinkSync(readmePath)
+    fs.writeFileSync(readmePath, template(templateString)(translatedInfo))
+  })
 
   commit()
 }

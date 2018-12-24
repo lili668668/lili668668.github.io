@@ -20,7 +20,7 @@
 ## Experience
 
 <%
-  experienceGroup.forEach(function(group) {
+  experienceGroups.forEach(function(group) {
     print(`### ${group.title}\n\n`);
     group.items.forEach(function(item) {
       print(`- ${item.title}\n`);
