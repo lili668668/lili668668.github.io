@@ -17,7 +17,7 @@ function Footer (props) {
   return (
     <FooterBase>
       <Grid container direction="row" justify="space-between" alignItems="center">
-        <Typography className={classes.text}>© 2018 ballfish</Typography>
+        <Typography className={classes.text}>{`© ${(new Date()).getFullYear()} ballfish`}</Typography>
         <Grid item>
           <LanguagePopover />
           <WebsPopover />
