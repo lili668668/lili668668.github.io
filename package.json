@@ -1,6 +1,6 @@
 {
   "name": "ballfish-website",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "homepage": "http://ballfish.io",
   "github": "lili668668",
@@ -16,6 +16,7 @@
     "i18next-browser-languagedetector": "^2.2.4",
     "i18next-xhr-backend": "^1.5.1",
     "lodash": "^4.17.11",
+    "markdown-pdf": "^9.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
@@ -29,7 +30,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build; node ./src/readme/makeReamd;",
+    "build": "react-scripts build; node ./src/file-template/makeOtherFiles;",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
