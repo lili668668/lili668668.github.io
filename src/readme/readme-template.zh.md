@@ -64,7 +64,7 @@
 
   `$ npm install`
 
-3. 修改 `src/info.json` 與 `deploy.js` 的資料
+3. 修改 `src/info.json` 與 `package.json` 的資料
 
 4. 刪除 `public/CNAME` 的檔案，或將 CNAME 修改成自己的 domain name
 

@@ -64,7 +64,7 @@ You can use this template to make your own website.
 
   `$ npm install`
 
-3. Modify `src/info.json` and `deploy.js` information
+3. Modify `src/info.json` and `package.json` information
 
 4. Remove `public/CNAME` or change CNAME to your own domain name
 
