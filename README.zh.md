@@ -13,22 +13,22 @@
 ### 主技能
 
 - 前端 (React)
-  > 一年經驗，近一年有在接觸的技術，以 React 為主，有獨立開發能力
+  > 一年經驗，近一年有在接觸的技術，以 React 為主，有獨立開發能力，主要的 Side Projects 是鸚鵡兄弟產生器與個人網頁
 - 網頁爬蟲 (Python, C#)
   > 三年經驗，為四年前自學的技術，開發語言以 Python 為主，之前在實習公司時有用 C# 開發過，有獨立開發能力
 - 遊戲開發 (C#/Unity)
-  > 一年經驗，為兩年前自學的技術，開發語言以 C# 為主，遊戲引擎為 Unity3D，有獨立開發能力
+  > 一年經驗，為兩年前自學的技術，開發語言以 C# 為主，遊戲引擎為 Unity3D，有獨立開發能力，主要的 Side Project 是大專生計劃時開發的教導小孩程式邏輯的遊戲
 
 ### 副技能
 
 - 後端 (NodeJS/Egg, NodeJS/Express, NodeJS/Socketio)
-  > 以 NodeJS 為主，Express, socketio 一直有在研究，Egg 框架為一年前開始接觸，半獨立開發能力，並非強項
+  > 以 NodeJS 為主，Express, socketio 一直有在研究，Egg 框架為一年前開始接觸，半獨立開發能力
 - 前端 (Vue)
   > 半年經驗，為一年前自學的技術，有獨立開發能力
 - 前端 (AngularJS)
-  > 半年經驗，僅修改過他人程式碼，無獨立開發能力
+  > 半年經驗，僅修改過他人程式碼
 - 手機應用開發 (Android)
-  > 半年經驗，大二時曾做過小專案，有獨立開發能力，但目前已與相關技術脫節略久
+  > 半年經驗，大二時曾做過小專案
 - Rust
   > 學習中，還未有實際專案
 - Java
@@ -92,7 +92,7 @@
 
   `$ npm install`
 
-3. 修改 `src/info.json` 與 `deploy.js` 的資料
+3. 修改 `src/info.json` 與 `package.json` 的資料
 
 4. 刪除 `public/CNAME` 的檔案，或將 CNAME 修改成自己的 domain name
 

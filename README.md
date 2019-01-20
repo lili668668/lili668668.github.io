@@ -38,7 +38,7 @@ Wavenet-Software Engineer
 
 ## Experience
 
-### Open Source Community
+### Open Source Community Experience
 
 - Students' Information Technology Conference
   > I join to SITCON in 2015. I am in charge of administrative work.
@@ -47,12 +47,12 @@ Wavenet-Software Engineer
 - Rust book club
   > I hold a book club to learn Rust language.
 
-### Works
+### Work Experience
 
 - Wavenet
   > I work at wavenet from January in 2018 to now.
 
-### University
+### University Period
 
 - College student research program
   > I developed a little game to teach children program logic
@@ -92,7 +92,7 @@ You can use this template to make your own website.
 
   `$ npm install`
 
-3. Modify `src/info.json` and `deploy.js` information
+3. Modify `src/info.json` and `package.json` information
 
 4. Remove `public/CNAME` or change CNAME to your own domain name
 
