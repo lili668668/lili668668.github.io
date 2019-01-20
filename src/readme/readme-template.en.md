@@ -1,10 +1,12 @@
-# <%= nickname %> / <%= name %>
+# <img src="<%= mdAvatar %>" width="60" height="60"> <%= nickname %> / <%= name %>
 
 <% print(titles.join(' / ')); %>
 
+<img src="<%= mdPhoto %>" width="240">
+
 > <%= content %>
 
-- [Chinese](https://github.com/lili668668/lili668668.github.io/blob/react-website/README.zh.md)
+- [Chinese Version](<%= chineseVersionPath %>)
 
 ## Skills
 

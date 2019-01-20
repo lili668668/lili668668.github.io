@@ -1,8 +1,10 @@
 {
   "name": "ballfish-website",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "private": true,
   "homepage": "http://ballfish.io",
+  "github": "lili668668",
+  "defaultLanguage": "en",
   "dependencies": {
     "@material-ui/core": "^3.7.1",
     "@material-ui/icons": "^3.0.1",

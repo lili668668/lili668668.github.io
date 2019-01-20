@@ -3,7 +3,7 @@ const config = require('./package.json')
 
 ghpages.publish('build', {
   branch: 'master',
-  repo: 'https://github.com/lili668668/lili668668.github.io.git',
+  repo: `https://github.com/${config.github}/${config.github}.github.io.git`,
   message: `Update version ${config.version}`
 }, (err) => {
   if (err) console.log(err)

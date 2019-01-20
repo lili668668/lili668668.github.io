@@ -1,6 +1,7 @@
 const fs = require('fs')
 const template = require('lodash/template')
 const git = require('simple-git')
+const config = require('../../package.json')
 const info = require('../info')
 const zh = require('../../public/locales/zh/translations')
 const en = require('../../public/locales/en/translations')
@@ -41,10 +42,14 @@ function commit () {
 
 function main () {
   const languages = ['en', 'zh']
-  const defaultLanguage = 'en'
+  const defaultLanguage = config.defaultLanguage
 
   languages.forEach(lng => {
-    const translatedInfo = translate(info, lng)
+    const translatedInfo = {
+      ...translate(info, lng),
+      englishVersionPath: `https://github.com/${config.github}/${config.github}.github.io/blob/react-website/README${defaultLanguage === 'en' ? '' : 'en'}.md`,
+      chineseVersionPath: `https://github.com/${config.github}/${config.github}.github.io/blob/react-website/README${defaultLanguage === 'zh' ? '' : 'zh'}.md`
+    }
 
     const templatePath = `./src/readme/readme-template.${lng}.md`
     const readmePath = lng === defaultLanguage ? './README.md' : `./README.${lng}.md`

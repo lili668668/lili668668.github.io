@@ -1,10 +1,12 @@
-# <%= nickname %> / <%= name %>
+# <img src="<%= mdAvatar %>" width="60" height="60"> <%= nickname %> / <%= name %>
 
 <% print(titles.join(' / ')); %>
 
+<img src="<%= mdPhoto %>" width="240">
+
 > <%= content %>
 
-- [英文](https://github.com/lili668668/lili668668.github.io/blob/react-website/README.md)
+- [英文版本](<%= englishVersionPath %>)
 
 ## 技能樹
 
