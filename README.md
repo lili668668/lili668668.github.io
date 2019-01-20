@@ -1,10 +1,12 @@
-# ballfish / Tzu-Yin Hong
+# <img src="/images/ballfish.png" width="60" height="60"> ballfish / Tzu-Yin Hong
 
 Wavenet-Software Engineer
 
+<img src="http://ballfish.io/images/sitcon-camp-2017.jpg" width="240">
+
 > I am ballfish. Real name is Tzu-Yin Hong. I come from Kaohsiung City. I am living in Taipei City now. I am introverted and shy. I like to program and write novel. My dream is contributing open source commuity.
 
-- [Chinese](https://github.com/lili668668/lili668668.github.io/blob/react-website/README.zh.md)
+- [Chinese Version](https://github.com/lili668668/lili668668.github.io/blob/react-website/READMEzh.md)
 
 ## Skills
 

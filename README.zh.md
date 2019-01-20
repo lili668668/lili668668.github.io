@@ -1,10 +1,12 @@
-# 球魚 / 洪慈吟
+# <img src="/images/ballfish.png" width="60" height="60"> 球魚 / 洪慈吟
 
 潮網科技-軟體工程師
 
+<img src="http://ballfish.io/images/sitcon-camp-2017.jpg" width="240">
+
 > 我是球魚，本名洪慈吟，是一隻成長於高屏溪的魚，目前位於新店溪附近生活。生性內向害羞，喜歡寫程式與小說的宅魚，人生目標走走看看這個世界，夢想是貢獻開源界。
 
-- [英文](https://github.com/lili668668/lili668668.github.io/blob/react-website/README.md)
+- [英文版本](https://github.com/lili668668/lili668668.github.io/blob/react-website/README.md)
 
 ## 技能樹
 
