@@ -47,8 +47,8 @@ function main () {
   languages.forEach(lng => {
     const translatedInfo = {
       ...translate(info, lng),
-      englishVersionPath: `https://github.com/${config.github}/${config.github}.github.io/blob/react-website/README${defaultLanguage === 'en' ? '' : 'en'}.md`,
-      chineseVersionPath: `https://github.com/${config.github}/${config.github}.github.io/blob/react-website/README${defaultLanguage === 'zh' ? '' : 'zh'}.md`
+      englishVersionPath: `https://github.com/${config.github}/${config.github}.github.io/blob/react-website/README${defaultLanguage === 'en' ? '' : '.en'}.md`,
+      chineseVersionPath: `https://github.com/${config.github}/${config.github}.github.io/blob/react-website/README${defaultLanguage === 'zh' ? '' : '.zh'}.md`
     }
 
     const templatePath = `./src/readme/readme-template.${lng}.md`
