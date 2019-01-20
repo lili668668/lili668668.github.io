@@ -1,4 +1,4 @@
-# <img src="/images/ballfish.png" width="60" height="60"> ballfish / Tzu-Yin Hong
+# <img src="http://ballfish.io/images/ballfish.png" width="60" height="60"> ballfish / Tzu-Yin Hong
 
 Wavenet-Software Engineer
 
