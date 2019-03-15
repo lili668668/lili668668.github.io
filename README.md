@@ -77,7 +77,7 @@ Wavenet-Software Engineer
 - [GitHub](https://github.com/lili668668)
 - [Facebook](https://fb.me/ballfish668668)
 - [Plurk](https://www.plurk.com/ballfish668)
-- [Medium](https://medium.com/@lili668668)
+- [Medium](https://medium.com/big-hole)
 - [Linkedin](https://www.linkedin.com/in/ballfish/)
 
 ## About the template
