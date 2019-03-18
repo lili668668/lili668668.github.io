@@ -14,7 +14,7 @@ function TitlesBandBase (props) {
       {
         titles
           .map(title => <Title key={title}>{title}</Title>)
-          .reduce((prev, curr, index) => [prev, (<Separate key={index} />), curr])
+          .reduce((prev, curr, index) => [prev, (<Separate key={index} />), curr], [])
       }
     </Frame>
   )
