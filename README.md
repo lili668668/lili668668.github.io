@@ -1,6 +1,6 @@
 # <img src="http://ballfish.io/images/ballfish.png" width="60" height="60"> ballfish / Tzu-Yin Hong
 
-Wavenet-Software Engineer
+
 
 <img src="http://ballfish.io/images/sitcon-camp-2017.jpg" width="240">
 

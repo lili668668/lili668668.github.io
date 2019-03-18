@@ -1,6 +1,6 @@
 # <img src="http://ballfish.io/images/ballfish.png" width="60" height="60"> 球魚 / 洪慈吟
 
-潮網科技-軟體工程師
+
 
 <img src="http://ballfish.io/images/sitcon-camp-2017.jpg" width="240">
 
