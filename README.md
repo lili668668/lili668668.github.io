@@ -50,7 +50,7 @@
 ### Work Experience
 
 - Wavenet
-  > I work at wavenet from January in 2018 to now.
+  > I work at wavenet from January in 2018 to February in 2019.
 
 ### University Period
 
