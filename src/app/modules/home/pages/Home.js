@@ -19,7 +19,6 @@ function Home (props) {
       <NameBand name={t(info.name)} nickname={t(info.nickname)} />
       <TitlesBand titles={titles} />
       <InfoIconsBand>
-        <InfoIcon name={t('company')} alt={t(info.company)} src={info.companyIcon} href={info.companyUrl} tooltip={t(info.company)} />
         <InfoIcon name={t('gmail')} alt={info.gmail} src={info.gmailIcon} href={`mailTo:${info.gmail}`} tooltip={info.gmail} />
         <InfoIcon name={t('github')} alt={info.githubAccount} src={info.githubIcon} href={info.github} tooltip={info.githubAccount} />
         <InfoIcon name={t('facebook')} alt={info.facebookAccount} src={info.facebookIcon} href={info.facebook} tooltip={info.facebookAccount} />

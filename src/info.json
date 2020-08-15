@@ -9,17 +9,17 @@
     {
       "title": "Main Skills", "items": [
         { "title": "React", "description": "react_content" },
+        { "title": "Node", "description": "node_content" },
         { "title": "Crawler", "description": "crawler_content" },
-        { "title": "Unity", "description": "unity_content" }
+        { "title": "Rust", "description": "rust_content" }
       ]
     },
     {
       "title": "Secondary Skills", "items": [
-        { "title": "Egg", "description": "egg_content" },
         { "title": "Vue", "description": "vue_content" },
+        { "title": "Unity", "description": "unity_content" },
         { "title": "AngularJS", "description": "angularjs_content" },
         { "title": "Android", "description": "android_content" },
-        { "title": "Rust", "description": "rust_content" },
         { "title": "Java", "description": "java_content" }
       ]
     }
@@ -27,13 +27,15 @@
   "experienceGroups": [
     {
       "title": "Open Source Community", "items": [
-        { "title": "SITCON", "description": "sitcon_content" },
+        { "title": "COSCUP", "description": "coscup_content" },
+        { "title": "Rust book club", "description": "rust_read_content" },
         { "title": "MOPCON", "description": "mopcon_content" },
-        { "title": "Rust book club", "description": "rust_read_content" }
+        { "title": "SITCON", "description": "sitcon_content" }
       ]
     },
     {
       "title": "Works", "items": [
+        { "title": "universetech", "description": "universetech_content" },
         { "title": "wavenet", "description": "wavenet_content" }
       ]
     },
@@ -46,14 +48,13 @@
     }
   ],
   "apps": [
+    { "name": "botfish", "link": "https://botfishweb.ballfish.io/" , "icon": "/images/botfish.png", "description": "botfish_content" },
     { "name": "e5", "link": "http://ballfi.sh/e5", "icon": "/images/e5.png", "description": "e5_content" },
     { "name": "SuperCube", "link": "http://ballfish.io/SuperCubeWeb", "icon": "/images/supercube-icon.png", "description": "super_cube_content" }
   ],
   "oldWebs": [
     { "name": "2017", "link": "http://ballfish.io/old-website-2017/" }
   ],
-  "company": "wavenet",
-  "companyUrl": "https://www.wavenet.com.tw/",
   "gmail": "lili668668@gmail.com",
   "github": "https://github.com/lili668668",
   "githubAccount": "lili668668",
@@ -67,7 +68,6 @@
   "linkedinAccount": "ballfish",
   "avatar": "/images/ballfish.png",
   "personAvatar": "/images/sitcon-camp-2017.jpg",
-  "companyIcon": "/images/wavenet-icon.png",
   "githubIcon": "/images/github-icon.svg",
   "facebookIcon": "/images/facebook-icon.svg",
   "gmailIcon": "/images/gmail-icon.svg",
