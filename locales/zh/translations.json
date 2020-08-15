@@ -47,7 +47,7 @@
   "SuperCube": "Super Cube",
   "super_cube_content": "大專生研究計劃作品，教導小孩寫程式的小遊戲，使用 Unity3D 製作",
   "botfish": "機器魚",
-  "botfish_content": "Line bot，基於興趣做的",
+  "botfish_content": "Line bot，最初是因為想要一個在 Line 上面像 slack bot 那樣會 echo 的機器人。本來想說用卡米狗，但他的 random 機制壞掉了，所以就想說自己寫一個。",
   "study": "大專生研究計劃",
   "study_content": "大三時參與此計劃，並製作了一個教小孩寫程式的遊戲，使用 Unity3D，且獲獎大專生計劃傑出創作獎",
   "COSCUP": "COSCUP 開源人年會",
