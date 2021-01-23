@@ -49,7 +49,7 @@
   ],
   "apps": [
     { "name": "botfish", "link": "https://botfishweb.ballfish.io/" , "icon": "/images/botfish.png", "description": "botfish_content" },
-    { "name": "e5", "link": "http://ballfi.sh/e5", "icon": "/images/e5.png", "description": "e5_content" },
+    { "name": "e5", "link": "https://ballfish.io/docomo-poinko-textmaker", "icon": "/images/e5.png", "description": "e5_content" },
     { "name": "SuperCube", "link": "http://ballfish.io/SuperCubeWeb", "icon": "/images/supercube-icon.png", "description": "super_cube_content" }
   ],
   "oldWebs": [
