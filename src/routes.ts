@@ -1,8 +1,8 @@
 import createRoute from './utils/createRoute'
-import NotFoundPage from './components/NotFoundPage'
+import HomePage from './pages/home/HomePage'
 
 const routes = [
-  createRoute<{}, {}>({ key: 'home', path: '/', page: NotFoundPage })
+  createRoute<{}, {}>({ key: 'home', path: '/', page: HomePage })
 ]
 
 export default routes
