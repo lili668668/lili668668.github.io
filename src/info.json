@@ -8,16 +8,17 @@
   "skillGroups": [
     {
       "title": "Main Skills", "items": [
+        { "title": "Laravel", "description": "laravel_content" },
         { "title": "React", "description": "react_content" },
         { "title": "Node", "description": "node_content" },
-        { "title": "Crawler", "description": "crawler_content" },
-        { "title": "Rust", "description": "rust_content" }
+        { "title": "Crawler", "description": "crawler_content" }
       ]
     },
     {
       "title": "Secondary Skills", "items": [
         { "title": "Vue", "description": "vue_content" },
         { "title": "Unity", "description": "unity_content" },
+        { "title": "Rust", "description": "rust_content" },
         { "title": "AngularJS", "description": "angularjs_content" },
         { "title": "Android", "description": "android_content" },
         { "title": "Java", "description": "java_content" }
