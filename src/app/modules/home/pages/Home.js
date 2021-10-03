@@ -24,7 +24,6 @@ function Home (props) {
         <InfoIcon name={t('facebook')} alt={info.facebookAccount} src={info.facebookIcon} href={info.facebook} tooltip={info.facebookAccount} />
         <InfoIcon name={t('plurk')} alt={info.plurkAccount} src={info.plurkIcon} href={info.plurk} tooltip={info.plurkAccount} />
         <InfoIcon name={t('medium')} alt={info.mediumAccount} src="M" href={info.medium} tooltip={info.mediumAccount} iconComponent={AvatarButton} />
-        <InfoIcon name={t('linkedin')} alt={info.linkedinAccount} src={info.linkedinIcon} href={info.linkedin} tooltip={info.linkedinAccount} />
       </InfoIconsBand>
     </CardFrame>
   )
