@@ -55,7 +55,7 @@ const handleKeydown = (event: KeyboardEvent) => {
     selectedIndex.value = (selectedIndex.value + 1) % items.length
   } else if (event.key === 'Enter') {
     router.push(getPath(items[selectedIndex.value].value))
-  } else if (event.key >= '1' && event.key <= '4') {
+  } else if (event.key >= '1' && event.key <= '5') {
     const index = parseInt(event.key) - 1
     router.push(getPath(items[index].value))
   }
