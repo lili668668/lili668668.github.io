@@ -13,11 +13,6 @@ export default defineConfig({
     vue(),
     vueJsx(),
     vueDevTools(),
-    viteStaticCopy({
-      targets: [
-        { src: 'CNAME', dest: '.' },
-      ],
-    }),
   ],
   resolve: {
     alias: {
