@@ -53,7 +53,7 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          VITE_BASE: /${{ github.event.repository.name }}/
+          VITE_BASE: /
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
