@@ -24,7 +24,7 @@
 
     <div :class="$style.info">
       <p :class="$style.description">{{ t(`game.${current.key}.description`) }}</p>
-      <CursorSelector :items="selectorItems" :modelValue="0" />
+      <CursorSelector :items="selectorItems" :modelValue="0" @confirm="enterWebsite" />
     </div>
 
     <div :class="$style.dots">
@@ -79,7 +79,11 @@ function next() {
 function onKeyDown(e: KeyboardEvent) {
   if (e.key === 'ArrowLeft') prev()
   else if (e.key === 'ArrowRight') next()
-  else if (e.key === 'Enter') window.open(t(`game.${current.value.key}.link`), '_blank')
+  else if (e.key === 'Enter') enterWebsite()
+}
+
+function enterWebsite() {
+  window.open(t(`game.${current.value.key}.link`), '_blank')
 }
 
 onMounted(() => window.addEventListener('keydown', onKeyDown))
