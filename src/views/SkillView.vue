@@ -327,7 +327,7 @@ function curve(x1: number, y1: number, x2: number, y2: number): string {
 .treeRoot {
   font-weight: bold;
   font-size: 16px;
-  color: #2c3e50;
+  color: #3b94ed;
 }
 
 .treeChar {
