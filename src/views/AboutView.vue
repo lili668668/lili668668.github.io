@@ -309,7 +309,6 @@ onUnmounted(() => {
 
 .tip {
   display: none;
-  line-height: 0;
   font-size: 12px;
   color: gray;
 }
