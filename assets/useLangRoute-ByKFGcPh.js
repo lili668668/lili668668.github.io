@@ -1,1 +1,0 @@
-import{h as e}from"./index-B0D_E7F8.js";function t(){let t=e(),n=t.params.lang,r=e=>`/${n}/${e}`;return{getPath:r,lang:n}}export{t as b};

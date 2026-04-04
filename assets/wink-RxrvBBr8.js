@@ -1,1 +1,0 @@
-var e=`/lili668668.github.io/assets/origin-BL285k-c.png`,t=`/lili668668.github.io/assets/wink-Fg3LtFg0.png`;export{t as b,e as c};
